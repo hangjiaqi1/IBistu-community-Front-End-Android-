@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/timg">
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="30dp"
+        android:background="#99cccc"
+        android:padding="15dp" >
+
+        <EditText
+            android:id="@+id/dizhi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/shuliang"
+            android:layout_below="@+id/shuliang"
+            android:layout_marginTop="86dp"
+            android:ems="10"
+            android:textColor="#9B4400"
+            android:hint="请  填  写  收  货  地  址"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/shuliang"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp"
+            android:ems="10"
+            android:textColor="#9B4400"
+            android:hint="请  填  写  购  买  数  量"
+            android:inputType="text"
+            android:singleLine="true" />
+        <Button
+            android:id="@+id/shoppingsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dizhi"
+            android:layout_marginTop="48dp"
+            android:background="@android:color/transparent"
+            android:text="提  交  订  单"
+            android:textColor="#9B4400"
+            android:textColorLink="#FF0066CC"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IBistu</string>
+    <string name="versioninfo">消息</string>
+    <string name="home">主页</string>
+    <string name="userinfo">个人</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="广告位轮播图"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="- - - - - - - - - - - 校内服务 - - - - - - - - - - -"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:onClick="click_xysc"
+                    android:id="@+id/imageButton"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/a" />
+
+                <ImageButton
+                    android:onClick="click_ess"
+                    android:id="@+id/imageButton1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/b" />
+
+                <ImageButton
+                    android:onClick="click_swzl"
+                    android:id="@+id/imageButton2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/c" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="校园商城"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView101"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="二手书"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="邮件服务"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="- - - - - - - - - - - 考勤打卡 - - - - - - - - - - -"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:onClick="click_qd"
+                    android:id="@+id/imageButtons"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/d" />
+
+                <ImageButton
+                    android:onClick="click_qj"
+                    android:id="@+id/imageButton1as"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/e" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textaView10"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textVaiew9"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="签到"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textVdiew101"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="请假"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="- - - - - - - - - - - 教务通告 - - - - - - - - - - -"
+                android:textSize="24sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:onClick="click_tz"
+                    android:id="@+id/imageButtosan"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/f" />
+
+                <ImageButton
+                    android:onClick="click_grkb"
+                    android:id="@+id/imageButtzxon1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/g" />
+
+                <ImageButton
+                    android:onClick="click_bgtxl"
+                    android:id="@+id/imageBuctton2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/h" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/texvftView10"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tefvxtView9"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="通知"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textVasiew101"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="个人课表"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/texzcxtView11"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="办公通讯录"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="- - - - - - - - - - - 团队组建 - - - - - - - - - - -"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:onClick="click_cjtd"
+                    android:id="@+id/imageButaton"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/i" />
+
+                <ImageButton
+                    android:onClick="click_tdgt"
+                    android:id="@+id/imageButxton1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/j" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/texvdstView10"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tevsxtView9"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="创建团队"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textVixcew101"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="团队沟通"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="- - - - - - - - - - - 应用迁移 - - - - - - - - - - -"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:onClick="click_yyqy"
+                    android:id="@+id/imagdseButton"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/k" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textVeiew10"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textViweew9"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="应用迁移"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

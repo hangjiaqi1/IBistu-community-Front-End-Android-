@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+    <!-- padding 内边距   layout_margin 外边距
+  		android:layout_alignParentTop 布局的位置是否处于顶部 -->
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_margin="15dip"
+        android:background="#93ffffff" >
+        <!-- 账号 -->
+        <TextView
+            android:id="@+id/login_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="账 号" />
+        <EditText
+            android:id="@+id/user_phone_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请 填 写 学 生 证 号 码"
+            android:layout_below="@id/login_user"
+            android:singleLine="true"
+            android:inputType="number"
+            />
+        <!-- 姓名 text -->
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_phone_input"
+            android:layout_marginTop="3dp"
+            android:text=" 昵 称  "/>
+        <EditText
+            android:id="@+id/user_name_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:singleLine="true"
+            android:inputType="text" />
+        <!-- 身份证号码 text -->
+        <TextView
+            android:id="@+id/user_id_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name_input"
+            android:layout_marginTop="3dp"
+            android:text="身份证号码"/>
+        <EditText
+            android:id="@+id/user_id_card_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="选 填"
+            android:layout_below="@id/user_id_card"
+            android:singleLine="true"
+            android:inputType="text" />
+        <!-- 密码 text -->
+        <TextView
+            android:id="@+id/user_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_id_card_input"
+            android:layout_marginTop="3dp"
+            android:text="密 码"/>
+        <EditText
+            android:id="@+id/user_password_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_password"
+            android:password="true"
+            android:singleLine="true"
+            android:inputType="textPassword" />
+        <!-- 重复输入密码 text -->
+        <TextView
+            android:id="@+id/user_password_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_password_input"
+            android:layout_marginTop="3dp"
+            android:text="确认密码"/>
+        <EditText
+            android:id="@+id/user_password_input_d"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_password_"
+            android:password="true"
+            android:singleLine="true"
+            android:inputType="textPassword" />
+        <!-- 登录button -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/warnText"
+            android:layout_below="@id/user_password_input_d"
+            android:textSize="15dp"
+            android:textColor="#ff0000" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_password"
+            android:layout_alignRight="@+id/user_password_input_d"
+            android:layout_alignStart="@+id/user_password"
+            android:layout_below="@id/warnText"
+            android:background="#4FC1FB"
+            android:text="注 册 并 登 录"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <Button  android:id="@+id/register_text"
+            android:text="我  有  账  号"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9B4400"
+            android:textColorLink="#FF0066CC"
+            android:textSize="18dp"
+			android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="27dp"
+            android:layout_marginEnd="27dp" />
+
+    </RelativeLayout>
+</LinearLayout>
